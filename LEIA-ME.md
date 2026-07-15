@@ -1,28 +1,36 @@
-# Front-end — Vite
+# Organograma GPV — v0.2.0
 
-## Instalação local
+Atualização visual completa do front-end.
 
-```bash
-npm install
-npm run dev
+## O que mudou
+
+- direção visual escura, premium e institucional;
+- fotos como protagonistas dos cards;
+- cabeçalho mais limpo;
+- indicadores compactos;
+- filtros em uma barra única;
+- cards verticais com melhor hierarquia;
+- gaveta de perfil redesenhada;
+- conectores e árvore mais elegantes;
+- URL do Apps Script configurada como fallback;
+- responsividade melhorada.
+
+## Instalação
+
+Substitua no repositório:
+
+- `index.html`
+- `package.json`
+- `vercel.json`
+- `.npmrc`
+- toda a pasta `src`
+
+Não apague:
+
+```text
+public/assets/colaboradores/
 ```
 
-Sem a variável `VITE_API_URL`, o sistema usa dados de demonstração iguais aos dados iniciais da planilha.
+A pasta contém as fotos já enviadas.
 
-## Vercel
-
-Crie a variável:
-
-```env
-VITE_API_URL=https://script.google.com/macros/s/SEU_DEPLOY/exec
-```
-
-Depois faça um novo deploy.
-
-## Atualização de dados
-
-Os dados são carregados da planilha sempre que a página abre.
-
-A idade não é armazenada. Ela é calculada no navegador usando `DataNascimento`.
-
-O tempo de empresa também é calculado usando `DataAdmissao`.
+Depois do commit, a Vercel iniciará um novo deploy.
