@@ -1,36 +1,23 @@
-# Organograma GPV — v0.2.0
+# Ajuste "Tudo em uma tela" — v0.2.1
 
-Atualização visual completa do front-end.
-
-## O que mudou
-
-- direção visual escura, premium e institucional;
-- fotos como protagonistas dos cards;
-- cabeçalho mais limpo;
-- indicadores compactos;
-- filtros em uma barra única;
-- cards verticais com melhor hierarquia;
-- gaveta de perfil redesenhada;
-- conectores e árvore mais elegantes;
-- URL do Apps Script configurada como fallback;
-- responsividade melhorada.
-
-## Instalação
-
-Substitua no repositório:
-
-- `index.html`
-- `package.json`
-- `vercel.json`
-- `.npmrc`
-- toda a pasta `src`
-
-Não apague:
+Substitua o `index.html` da raiz e envie estes dois arquivos para `src`:
 
 ```text
-public/assets/colaboradores/
+src/fit-screen.js
+src/fit-screen.css
 ```
 
-A pasta contém as fotos já enviadas.
+Não apague os demais arquivos da pasta `src`.
 
-Depois do commit, a Vercel iniciará um novo deploy.
+Depois do commit, a Vercel fará um novo deploy.
+
+## Resultado
+
+- toda a hierarquia abre automaticamente;
+- a árvore é reduzida para caber na tela;
+- não há rolagem da página no computador;
+- zoom com o scroll do mouse;
+- arrastar para mover;
+- duplo clique para ajustar novamente;
+- botão “Ajustar à tela”;
+- cards menores, mantendo o perfil completo ao clicar.
